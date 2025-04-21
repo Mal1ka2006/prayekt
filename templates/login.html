@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login sahifasi</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="card" style="max-width: 400px; margin: auto; margin-top: 100px;">
+            <h2 style="text-align: center;">🧑‍💻 Saytga kirish</h2>
+            <form method="POST">
+                <input type="text" name="username" placeholder="Login" required>
+                <input type="password" name="password" placeholder="Parol" required>
+                <button type="submit">Kirish</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

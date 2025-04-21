@@ -1,0 +1,63 @@
+{
+    "taomlar": [
+      {
+        "name": "Osh",
+        "price": 120,
+        "description": "Osh  Ozbekistonning eng mashhur va qadimiy milliy taomlaridan biridir. U nafaqat Ozbekistonda, balki Markaziy Osiyo davlatlarida ham keng tarqalgan. Har bir viloyatda oshni tayyorlashda oziga xos usullar mavjud, ammo asosiy tarkibiy qismlar bir xil bolib qoladi.",
+        "image": "https://www.agro.uz/wp-content/uploads/2023/03/1-9.jpg"
+      },
+      {
+        "name": "Manti",
+        "price": 120,
+        "description": "Marinovka siri: Gosht odatda sirka, piyoz, qora qalampir, tuz, bazida kefir yoki limon sharbatida 1 2 soat (yoki bir kechada) marinad qilinadi — bu uni yumshoq va lazzatli qiladi. Olovda emas, chogda pishiriladi: Shashlik bevosita olovda emas, balki qizigan komir (chog) ustida pishiriladi. Bu usul goshtni kuyishdan saqlab, ichkarisigacha qovuradi.",
+        "image": "https://i.ytimg.com/vi/qyD3AX4DlJk/hq720.jpg?sqp=-oaymwEXCK4FEIIDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDFdX3bvJZrNH5LwJgSGQHamD4L1A"
+      },
+      {
+        "name": "Shashlik",
+        "price": 150,
+        "description": "Shashlik haqida 7 ta qiziqarli fakt Soz kelib chiqishi Shashlik sozi turkiy shish temir tayoq va ruscha lik qoshimchasidan tashkil topgan Yani temir tayoqda pishirilgan degan manoni beradi Qadimgi ildizlarga ega Goshtni otda sayohat qilayotgan kochmanchilar ot ustida tayoqqa qadab pishirgan Bu usul ming yillik tarixga ega  ",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNBytRgoERy5ARMocHHmUx85kwaJroHsJrpw&s"
+      }
+    ],
+    "salatlar": [
+      {
+        "name": "Cucumber Salad",
+        "price": 50,
+        "description": "Tarkibi boyicha universal Xohlovchilar kolbasani tovuq, krab tayoqchasi, hattoki bekon bilan almashtirishadi. Veganlar esa gosht orniga tofu yoki noxat ishlatadi. Cucumber Salad — bu eng oddiy va mashhur salatlardan biri bolib, ayniqsa yozgi fasllarda juda foydali va tetiklantiruvchi taom hisoblanadi. Quyida sizga ushbu salat haqida malumot va oddiy retseptni beraman.",
+        "image": "https://itsavegworldafterall.com/wp-content/uploads/2023/04/Avocado-Caesar-Salad-FI.jpg"
+      },
+      {
+        "name": "Onion Salad",
+        "price": 60,
+        "description": "Onion Salad goshtli taomlar uchun eng yaxshi garnir hisoblanadi. Piyoz yarim halqa shaklida togralib, sirka, tuz, qora murch va sumak bilan aralashtiriladi. Ba'zida ustiga kokatlar yoki limon sharbati ham qoshiladi. Bu salat oshqozon hazm qilishini osonlashtiradi va ishtahani ochadi. Ayniqsa shashlik bilan juda mos keladi.",
+        "image": "https://www.themediterraneandish.com/wp-content/uploads/2023/12/TMD-Chickpea-Salad-Leads-01-Angle-Horizontal.jpg"
+      },
+      {
+        "name": "Carrot Salad",
+        "price": 70,
+        "description": "Carrot Salad  tarkibida maydalangan sabzi, sarimsoq, zira, sirka va osimlik moyi boladi. Ba'zida bu salat koreyscha usulda ham tayyorlanadi va unga achchiq qalampir, soya sousi, sirkali souslar qoshiladi. Vitaminlarga boy bolib, ayniqsa A vitamini manbai hisoblanadi. Immunitetni mustahkamlovchi foydali salatlardan biridir.",
+        "image": "https://www.cookrepublic.com/wp-content/uploads/2023/08/green-avocado-salad-process11.jpg"
+      }
+    ],
+    "shirinliklar": [
+      {
+        "name": "Gulab Jamun",
+        "price": 90,
+        "description": "Gulab Jamun  Hindiston va Markaziy Osiyo oshxonalarida mashhur bolgan shirinlik. Sutli xamir (khoya)dan tayyorlanib, yogda qovuriladi va atirgul suvi, kardamon va shakar siropida hollanadi. Uning oziga xos yumshoqligi va sirli tami bu shirinlikni har qanday mehmondorchilik uchun mos qiladi.",
+        "image": "https://daryo.uz/cache/2020/04/Brauni-650x433.jpg"
+      },
+      {
+        "name": "Rasmalai",
+        "price": 110,
+        "description": "Rasmalai  juda yumshoq va qaymoqli shirinlik bolib, tvorogdan tayyorlangan dumaloq bolaklar quyuq, shirin sutga botiriladi. Unga pista, bodom va zafaron kabi bezaklar qoshiladi. Sovutilgan holda dasturxonga tortiladi va yoqimli silliqligi bilan kopchilikni oziga rom etadi.",
+        "image": "https://images.ctfassets.net/prxuf37q3ta2/6FrpQFJEL0V9UPO8T4n4LX/3fdb894fd581fe0a628b3df9a278d64a/BANNER_1024x576.jpg"
+      },
+      {
+        "name": "Kesari",
+        "price": 80,
+        "description": "Kesari semolina (manniy yormasi), sariyog (ghee), shakar va zafaron bilan tayyorlanadigan janubiy Hindiston shirinligi. Unda pista, bedana yongogi va rozilar kabi yongoqlar ishlatiladi. Kesari — bayramlar, nikohlar yoki maxsus tadbirlar uchun maxsus taom sifatida xizmat qilinadi.",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStus6OQuve_gjwr6pSrjjV0NO1DFeB_YEoJg&s"
+      }
+    ]
+  }
+  

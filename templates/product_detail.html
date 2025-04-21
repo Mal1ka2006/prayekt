@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ item.name }} - SS Briyani</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <nav>
+        <a href="{{ url_for('menu') }}">⬅️ Orqaga</a>
+    </nav>
+
+    <div class="container">
+
+        <!-- Flash xabari -->
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for msg in messages %}
+                    <div class="success-message">{{ msg }}</div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+
+        <!-- Mahsulot tafsiloti -->
+        <div class="card product_item">
+            <img class="img-detail" src="{{ item.image }}" alt="{{ item.name }}">
+            <h2>{{ item.name }}</h2>
+            <p><strong>Narxi:</strong> ${{ item.price }}</p>
+            <p>{{ item.description }}</p>
+        </div>
+
+        <!-- Like -->
+        <div class="card">
+            <form method="POST" action="{{ url_for('like_item', category=category, item_name=item.name) }}">
+                <button type="submit">❤️ Like</button>
+                {% set key = category ~ ':' ~ item.name %}
+                <span>({{ likes.get(key, 0) }} ta like)</span>
+            </form>
+        </div>
+
+        <!-- Comment -->
+        <div class="card">
+            <h4>💬 Izoh qoldiring</h4>
+            <form method="POST" action="{{ url_for('comment_item', category=category, item_name=item.name) }}">
+                <textarea name="comment" placeholder="Izoh yozing..." required></textarea>
+                <button type="submit">Izoh yuborish</button>
+            </form>
+
+            {% if comments.get(key) %}
+                <ul>
+                    {% for c in comments[key] %}
+                        <li>📝 {{ c }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        </div>
+
+        <!-- Order -->
+        <div class="card">
+            <h3>🛒 Buyurtma berish</h3>
+            <form method="POST" action="{{ url_for('submit_order', category=category, item_name=item.name) }}">
+                <input type="text" name="name" placeholder="Ismingiz" required>
+                <input type="text" name="address" placeholder="Manzil" required>
+                <input type="tel" name="phone" placeholder="Telefon raqam" required>
+                <button type="submit">Buyurtma berish</button>
+            </form>
+        </div>
+
+    </div>
+</body>
+</html>

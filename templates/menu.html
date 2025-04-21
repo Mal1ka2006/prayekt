@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SS Briyani - Menu</title>
+  <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <nav>
+        <a href="{{ url_for('logout') }}">🚪 Chiqish</a>
+    </nav>
+    <div class="container">
+        <h1>📋 Menu</h1>
+
+        {% for category, items in data.items() %}
+            <h2>{{ category|capitalize }}</h2>
+            <div class="flex">
+                {% for item in items %}
+                <div class="card">
+                    <img class="img-card" src="{{ item.image }}" alt="{{ item.name }}" style="width:100%; height:200px; object-fit:cover; border-radius:6px; margin-bottom:10px;">
+                    <h3>{{ item.name }}</h3>
+                    <p><strong>Narxi:</strong> {{ item.price }} ming</p>
+                
+                    <!-- Unikal ID bilan yashirin matn -->
+                    <input type="checkbox" class="read-more-state" id="desc-{{ category }}-{{ loop.index }}" />
+                
+                    <p class="description">
+                        {{ item.description[:70] }}
+                        <span class="read-more-target">
+                            {{ item.description[70:] }}
+                        </span>
+                    </p>
+                
+                    <label for="desc-{{ category }}-{{ loop.index }}" class="read-more-trigger">koproq...</label>
+                    <a href="{{ url_for('product_detail', category=category, item_name=item.name) }}" style="margin-left: 10px;">Xarid qilish</a>
+                </div>
+                
+                
+                {% endfor %}
+            </div>
+        {% endfor %}
+
+    </div>
+</body>
+</html>
